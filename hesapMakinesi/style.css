@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: #060605ba;
+}
+
+.card {
+    background-color: #FFFFCC;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 1px;
+    box-shadow: 10px 10px 17px -3px rgba(0,0,0,0.75);
+    position: absolute;
+}
+
+.card p {
+    font-size: 20px;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.c1 {
+    transform: rotate(-10deg);
+    top: 30px;
+    left: 30px;
+}
+
+.c2 {
+    transform: rotate(5deg);
+    top: 35px;
+    left: 300px;
+}
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #5b5b5b;
+    width: 300px;
+    height: 405px;
+    border-radius: 10px;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.45),
+    10px 10px 70px rgba(0,0,0,0.45),
+    inset -5px -5px -15px rgba(0,0,0,0.45),
+    inset 5px 5px 15px rgba(0,0,0,0.45);
+    transition: 1.5s ease all;
+}
+
+.cal-wrapper {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.screen {
+    width: 100%;
+    text-align: center;
+}
+
+.screen .input-number {
+    width: 90%;
+    height: 60px;
+    text-align: right;
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #8D9482;
+    font-size: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    margin: 5px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset -8px 0 8px rgba(0,0,0,0.15),
+    inset 0 -8px 8px rgba(0,0,0,0.15), 0 0 0 2px rgba(0,0,0,0.65),
+    10px 20px 25px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.buttons button:active {
+    filter: brightness(1.5);
+}
+
+.buttons .clear {
+    background-color: #f00;
+    width: 110px;
+    height: 50px;
+}
+
+.equal {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+}
+
+.buttons .num,
+.buttons .operator {
+    background: linear-gradient(180deg, #2f2f2f, #3f3f3f); 
+    width: 50px;
+    height: 50px;
+}
